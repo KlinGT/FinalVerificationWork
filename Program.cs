@@ -7,3 +7,30 @@
 */
 Console.Clear();
 
+// перебор массива:
+string[] IteratingThroughArray(string[] original)
+{
+    string[] result = new string[original.Length];
+    int count = 0;
+
+    for (int i = 0; i < original.Length; i++)
+    {
+        if (original[i].Length <= 3)
+        {
+            result[count] = original[i];
+            count++;
+        }
+    }
+    return result;
+}
+
+// вывод массива в консоль:
+void OutputArrayToTheConsole(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+
