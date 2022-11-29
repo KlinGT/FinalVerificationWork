@@ -34,3 +34,12 @@ void OutputArrayToTheConsole(string[] array)
     Console.WriteLine();
 }
 
+string[] original = new string[6] { "старт", "(",  "o-", "привет", "_-o", ")" };
+Console.WriteLine("Исходные значения: ");
+OutputArrayToTheConsole(original);
+
+string[] result = IteratingThroughArray(original);
+Console.WriteLine("\nРезультат: ");
+OutputArrayToTheConsole(result);
+
+Console.WriteLine();
